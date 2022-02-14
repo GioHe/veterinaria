@@ -1,0 +1,24 @@
+{
+  "name": "veterinaria",
+  "version": "1.0.0",
+  "description": "Desafío semana 2\r DESAFÍO VETERINARIA\r La veterinaria Santa Margarita necesita construir un sistema para gestionar a los veterinarios, sus horarios y las fichas médicas de sus pacientes. Adicionalmente quieren posicionarse en internet y darle comodidad a sus clientes poniendo a disposición un sitio web con información a través de un blog y la posibilidad de tomar horas vía internet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GioHe/veterinaria.git"
+  },
+  "author": "Giovanna Herrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GioHe/veterinaria/issues"
+  },
+  "homepage": "https://github.com/GioHe/veterinaria#readme",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "javascript": "^1.0.0",
+    "jquery": "^3.6.0"
+  }
+}
