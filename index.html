@@ -14,58 +14,58 @@
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!--Barra de navegación-->
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="logo" src="Images/logo-patitas.png" alt="Logo Patitas Felices">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Servicios
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Consulta Veterinaria</a></li>
-                  <li><a class="dropdown-item" href="#">Peluquería</a></li>
-                  <li><a class="dropdown-item" href="#">Farmacia</a></li>
-                  <li><a class="dropdown-item" href="#">Accesorios Mascota</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Historia</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sucursales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!--Barra de navegación-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="Images/logo-patitas.png" alt="Logo Patitas Felices">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Consulta Veterinaria</a></li>
+                <li><a class="dropdown-item" href="#">Peluquería</a></li>
+                <li><a class="dropdown-item" href="#">Farmacia</a></li>
+                <li><a class="dropdown-item" href="#">Accesorios Mascota</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="historia.html">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sucursales.html">Sucursales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
     <section id="carrusel">
       <!--Carrusel de imágenes-->
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -90,7 +90,9 @@
         </button>
       </div>
     </section>
+  </div>
 
+  <div class="container">
     <section class="Bienvenida">
       <div class="section-title text-center">
         <h2>¿POR QUÉ ELEGIRNOS?</h2>
@@ -179,19 +181,25 @@
           <figure class="imagen-form">
             <img src="Images/banner-form.jpg" alt="gato de formulario">
           </figure>
-          <form class="row g-3 needs-validation" novalidate>
+          <form id="formulario-reservar" class="row g-3 needs-validation" novalidate>
             <div class="col-md-4 position-relative">
               <label for="validationTooltip01" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="validationTooltip01" value="" required>
               <div class="valid-tooltip">
-                Looks good!
+                Correcto
+              </div>
+              <div class="invalid-tooltip">
+                El nombre es muy corto
               </div>
             </div>
             <div class="col-md-4 position-relative">
               <label for="validationTooltip02" class="form-label">Apellido</label>
               <input type="text" class="form-control" id="validationTooltip02" value="" required>
               <div class="valid-tooltip">
-                Looks good!
+                Correcto
+              </div>
+              <div class="invalid-tooltip">
+                El apellido es muy corto
               </div>
             </div>
 
@@ -199,7 +207,7 @@
               <label for="validationTooltip02" class="form-label">Nombre de tu mascota</label>
               <input type="text" class="form-control" id="validationTooltip02" value="" required>
               <div class="valid-tooltip">
-                Looks good!
+                Correcto
               </div>
             </div>
 
@@ -213,7 +221,7 @@
               <label for="validationTooltip02" class="form-label">Teléfono</label>
               <input type="tel" class="form-control" id="validationTooltip02" value="" required>
               <div class="valid-tooltip">
-                Looks good!
+                Correcto
               </div>
             </div>
 
@@ -288,19 +296,19 @@
           <h3 class="text-white">Menú</h3>
           <ul>
             <li>
-              <a href="#">Inicio</a>
+              <a href="index.html">Inicio</a>
             </li>
             <li>
-              <a href="#">Nosotros</a>
+              <a href="nosotros.html">Nosotros</a>
             </li>
             <li>
               <a href="#">Servicios</a>
             </li>
             <li>
-              <a href="#">Historia</a>
+              <a href="historia.html">Historia</a>
             </li>
             <li>
-              <a href="#">Sucursales</a>
+              <a href="sucursales.html">Sucursales</a>
             </li>
             <li>
               <a href="contacto.html">Contacto</a>
@@ -325,6 +333,7 @@
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="formulario.js"></script>
 </body>
 
 </html>
