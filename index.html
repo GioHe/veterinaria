@@ -182,7 +182,7 @@
             <img src="Images/banner-form.jpg" alt="gato de formulario">
           </figure>
           <form id="formulario-reservar" class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4 position-relative">
+            <div class="col-md-4 position-relative mb-3">
               <label for="validationTooltip01" class="form-label">Nombre</label>
               <input type="text" class="form-control" id="validationTooltip01" value="" required>
               <div class="valid-tooltip">
@@ -209,12 +209,20 @@
               <div class="valid-tooltip">
                 Correcto
               </div>
+              <div class="invalid-tooltip">
+                Debes ingresar el nombre de tu mascota.
+              </div>
             </div>
 
             <div class="col-md-4 position-relative">
               <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text"></div>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <div class="valid-tooltip">
+                Correcto
+              </div>
+              <div class="invalid-tooltip">
+                Debes ingresar un email
+              </div>  
             </div>
 
             <div class="col-md-4 position-relative">
@@ -223,20 +231,26 @@
               <div class="valid-tooltip">
                 Correcto
               </div>
+              <div class="invalid-tooltip">
+                Debes ingresar un teléfono
+              </div>  
             </div>
 
             <div class="col-md-3 position-relative">
               <label for="validationTooltip04" class="form-label">Tipo de mascota</label>
               <select class="form-select" id="validationTooltip04" required>
-                <option selected disabled value="">Elegir</option>
-                <option>Gato</option>
-                <option>Perro</option>
-                <option>Pequeño Roedor</option>
-                <option>Conejo</option>
-                <option>Ave</option>
-                <option>Tortuga</option>
-                <option>Otro</option>
+                <option selected value="">Elegir</option>
+                <option value="gato">Gato</option>
+                <option value="perro">Perro</option>
+                <option value="pequeño-roedor">Pequeño Roedor</option>
+                <option value="conejo">Conejo</option>
+                <option value="ave">Ave</option>
+                <option value="tortuga">Tortuga</option>
+                <option value="otro">Otro</option>
               </select>
+              <div class="valid-tooltip">
+                Correcto
+              </div>
               <div class="invalid-tooltip">
                 Por favor seleccione su mascota
               </div>
@@ -245,12 +259,15 @@
             <div class="col-md-3 position-relative">
               <label for="validationTooltip04" class="form-label">¿Cuál es el motivo?</label>
               <select class="form-select" id="validationTooltip04" required>
-                <option selected disabled value="">Elegir</option>
-                <option>Consulta Veterinaria</option>
-                <option>Peluquería</option>
-                <option>Chip de mascotas</option>
-                <option>Otro motivo</option>
+                <option selected value="">Elegir</option>
+                <option value="consulta-veterinaria">Consulta Veterinaria</option>
+                <option value="peluqueria">Peluquería</option>
+                <option value="chip-mascota">Chip de mascotas</option>
+                <option value="otro-motivo">Otro motivo</option>
               </select>
+              <div class="valid-tooltip">
+                Correcto
+              </div>
               <div class="invalid-tooltip">
                 Por favor seleccione su motivo de consulta
               </div>
@@ -260,14 +277,23 @@
               <label for="validationTooltip02" class="form-label">Fecha deseada</label>
               <input type="date" class="form-control" id="validationTooltip02" value="" required>
               <div class="valid-tooltip">
-                Looks good!
+                Correcto
+              </div>
+              <div class="invalid-tooltip">
+                Fecha no ingresada.
               </div>
             </div>
 
             <div class="form-floating">
               <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                style="height: 100px"></textarea>
+                style="height: 100px" required></textarea>
               <label for="floatingTextarea2">Déjanos tu comentario</label>
+            </div>
+            <div class="valid-tooltip">
+              Correcto
+            </div>
+            <div class="invalid-tooltip">
+              Por favor rellene con su comentario.
             </div>
 
             <div class="col-12">
@@ -331,6 +357,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="formulario.js"></script>
